@@ -20,4 +20,5 @@ mv multichaind multichain-cli multichain-util /usr/local/bin
 exit"
 
 # Start the Multichain daemon for SmplChain
-multichaind SmplChain -daemon
+# Change this value if IP address, chain name, or port is different.
+multichaind SmplChain@109.123.252.68:6299
