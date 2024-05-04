@@ -1,8 +1,8 @@
+# Multichain Script by Pavon Dunbar
+# Please run this script as root and from the root directory.
+
 #!/bin/bash
 
-# Prompt for root password and switch to root user
-echo "Please enter the root password:"
-su -c "
 # Change directory to /tmp
 cd /tmp
 
@@ -16,9 +16,5 @@ cd multichain-2.3.3
 # Move the Multichain binaries to /usr/local/bin
 mv multichaind multichain-cli multichain-util /usr/local/bin
 
-# Exit the root shell
-exit"
-
 # Start the Multichain daemon for SmplChain
-# Change this value if IP address, chain name, or port is different.
 multichaind SmplChain@109.123.252.68:6299
